@@ -46,8 +46,5 @@ function stringSearch(key, searchQuery, node, path, treeIndex) {
 }
 
 export function defaultSearchMethod({ node, path, treeIndex, searchQuery }) {
-  return (
-    stringSearch('title', searchQuery, node, path, treeIndex) ||
-    stringSearch('subtitle', searchQuery, node, path, treeIndex)
-  );
+  return stringSearch('title', searchQuery, node, path, treeIndex)
 }
