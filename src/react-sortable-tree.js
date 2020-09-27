@@ -502,7 +502,6 @@ ReactSortableTree.propTypes = {
 };
 
 ReactSortableTree.defaultProps = {
-  canNodeHaveChildren: () => true,
   className: '',
   getNodeKey: defaultGetNodeKey,
   innerStyle: {},
