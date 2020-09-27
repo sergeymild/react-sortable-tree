@@ -1,20 +1,20 @@
-export type TreeData = {
+export interface TreeData {
   title: string;
   subtitle: string;
   expanded: boolean;
   children: Array<TreeData>;
 }
 
-export type SearchResult = {
+export interface SearchResult {
   matches: Array<string>
 }
 
-export type SearchCriteria = {
+export interface SearchCriteria {
   node: TreeData;
   searchQuery?: string
 }
 
-export type SortableTree = {
+export interface SortableTree {
   treeData: Array<TreeData>;
   onChange?: (treeData: Array<TreeData>) => void;
   searchMethod?: (search: SearchCriteria) => boolean;
